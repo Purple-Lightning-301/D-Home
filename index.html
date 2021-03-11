@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D'Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="all">
+        <!-- Header -->
+        <div class="header">
+            <div class="mobile-menu flex">
+                <div class="brand flex bg-dark">
+                    <img src="./assets/Dhome-logo.png" alt="Dhome-logo" class="brand-logo">
+                    <h1 class="brand-name">HOMES</h1>
+                </div>
+                <nav class="navbar navbar-dark bg-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+            </div>
+            <!-- Menu -->
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="fix flex">
+                    <div class="bg-dark fix-menu p-4">
+                        <ul class="list-menu flex">
+                            <li class="menu-item">List your property</li>
+                            <li class="menu-item">Trips</li>
+                            <li class="menu-item">Messages</li>
+                        </ul>
+                    </div>
+                    <div class="user bg-dark">
+                        <div class="user-info flex">
+                            <div class="user-avatar flex">
+                                <img src="./assets/user-image.png" alt="user-image" class="user-img">
+                            </div>
+                            <p class="user-name">
+                                Isla Schoger
+                            </p>
+                        </div>
+                        <ul class="account flex">
+                            <li class="account-items">Account settings</li>
+                            <li class="account-items">Support</li>
+                            <li class="account-items">Sign out</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menu flex">
+                <div class="search-bar">
+                    <form action="" class="search-form">
+                        <div class="input-group p-1">
+                            <div class="input-group-prepend border-0">
+                                <button id="button-addon4" type="button" class="btn btn-link text-info">
+                                    <img src="./assets/search2.png" alt="" class="search-button">
+                                </button>
+                            </div>
+                            <input type="search" placeholder="Search by keywords" aria-describedby="button-addon4"
+                                class="form-control border-0">
+                        </div>
+                    </form>
+                </div>
+                <div class="filter flex">
+                    <img src="./assets/filter.png" alt="filter-icon" class="filter-icon">
+                    <p class="filter-text">
+                        <a href="#filter-form" data-toggle="collapse" role="button" aria-expanded="false"
+                            aria-controls="filter-form">
+                            Filters
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="collapse" id="filter-form">
+                <div class="fix-1024">
+                    <!-- Filter room -->
+                    <div class="room-option grid">
+                        <div class="bedrooms">
+                            <span>Bedrooms</span>
+                            <select id="bedroom">
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                        <div class="bathroom">
+                            <span>Bathrooms</span>
+                            <select id="bathroom">
+                                <option value="2">2</option>
+                            </select>
+                        </div>
+                        <!-- Price Filter-->
+                        <div class="price-option">
+                            <span>Price Range</span>
+                            <select id="price-range">
+                                <option class="range" value="range">Up to $2,000 /wk</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="rim"></div>
+                    <!-- Filter property-->
+                    <div class="property-option">
+                        <span class="title-option">Property Type</span>
+                        <div class="group-checkbox">
+                            <label class="property-container">House
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="property-container">Apartment
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="property-container">Loft
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="property-container">Townhouse
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="rim"></div>
+                    <!-- Amenities -->
+                    <div class="amenities-option">
+
+                        <span class="title-option">Amentities</span>
+                        <div class="fix-amenities-1024">
+                        <label class="Amentities-container Amentities-title">Balcony
+                            <input type="checkbox">
+                            <span class="Amentities-checkmark"></span>
+                        </label>
+                        <label class="Amentities-container">Air conditioning
+                            <input type="checkbox">
+                            <span class="Amentities-checkmark"></span>
+                        </label>
+                        <label class="Amentities-container">Pool
+                            <input type="checkbox">
+                            <span class="Amentities-checkmark"></span>
+                        </label>
+                        <label class="Amentities-container">Beach
+                            <input type="checkbox">
+                            <span class="Amentities-checkmark"></span>
+                        </label>
+                        <label class="Amentities-container">Pet friendly
+                            <input type="checkbox">
+                            <span class="Amentities-checkmark"></span>
+                        </label>
+                        <label class="Amentities-container">Kid friendly
+                            <input type="checkbox">
+                            <span class="Amentities-checkmark"></span>
+                        </label>
+                    </div>
+                    </div>
+                </div>
+                <div class="rim"></div>
+                <div class="update-field">
+                    <button class="update-button">
+                        Update result
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main -->
+    <div class="main grid">
+        <!--Main content-->
+        <div class="main-content">
+            <!-- City -->
+            <div class="general-info">
+                <h3 class="city">Los Angeles</h3>
+                <p class="city-introduce">
+                    Live like the stars in these luxurious Southern California estates.
+                </p>
+            </div>
+            <!--cards-->
+            <div class="cards grid">
+                <div class="card">
+                    <img src="./assets/home1.png" alt="a-house" class="home-image">
+                    <div class="card-info">
+                        <span class="plus">PLUS</span>
+                        <span class="status">3 BEDS • 2 BATHS</span>
+                        <p class="title">Modern home in city center</p>
+                        <p class="price">$1,400 /wk</p>
+                        <img src="./assets/star.png" alt="review" class="star">
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/home2.png" alt="a-house" class="home-image">
+                    <div class="card-info">
+                        <span class="status no-p">3 BEDS • 2 BATHS</span>
+                        <p class="title">Isolated house outside of...</p>
+                        <p class="price">$1,400 /wk</p>
+                        <img src="./assets/star.png" alt="review" class="star no-p">
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./assets/home2.png" alt="a-house" class="home-image">
+                    <div class="card-info">
+                        <span class="status no-p">3 BEDS • 2 BATHS</span>
+                        <p class="title">Isolated house outside of...</p>
+                        <p class="price">$1,400 /wk</p>
+                        <img src="./assets/star.png" alt="review" class="star no-p">
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <!-- City -->
+                <div class="general-info">
+                    <h3 class="city">Phoenix</h3>
+                    <p class="city-introduce">
+                        Escape the cold and enjoy great weather without breaking the bank.
+                    </p>
+                </div>
+                <!--cards-->
+                <div class="cards grid">
+                    <div class="card">
+                        <img src="./assets/home1.png" alt="a-house" class="home-image">
+                        <div class="card-info">
+                            <span class="plus">PLUS</span>
+                            <span class="status">3 BEDS • 2 BATHS</span>
+                            <p class="title">Modern home in city center</p>
+                            <p class="price">$1,400 /wk</p>
+                            <img src="./assets/star.png" alt="review" class="star">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/home2.png" alt="a-house" class="home-image">
+                        <div class="card-info">
+                            <span class="status no-p">3 BEDS • 2 BATHS</span>
+                            <p class="title">Isolated house outside of...</p>
+                            <p class="price">$1,400 /wk</p>
+                            <img src="./assets/star.png" alt="review" class="star no-p">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./assets/home2.png" alt="a-house" class="home-image">
+                        <div class="card-info">
+                            <span class="status no-p">3 BEDS • 2 BATHS</span>
+                            <p class="title">Isolated house outside of...</p>
+                            <p class="price">$1,400 /wk</p>
+                            <img src="./assets/star.png" alt="review" class="star no-p">
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </div>
+    <!-- bootstrap script -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
